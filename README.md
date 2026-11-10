@@ -1,81 +1,32 @@
-# 🍽️ Smart Menu Order Management System
+# Smart Menu OMS
 
-## 📌 Project Overview
-The Smart Menu Order Management System is a web-based application developed using PHP and MySQL. It allows restaurant staff or users to manage food menus, place orders, and track customer purchases efficiently.
+**A simple way to manage restaurant menus and orders.**
 
-This project demonstrates CRUD operations and relational database design in a real-world restaurant scenario.
+Smart Menu is a PHP and MySQL web application for organising food items, recording orders, and managing restaurant order information.
 
+## Features
 
-## 🚀 Features
+- **Menu management** — Add, view, edit, and remove food items.
+- **Order placement** — Record customer orders and quantities.
+- **Order overview** — Review, update, and remove orders.
+- **Price calculation** — Calculate order totals from menu prices.
 
-- Add new food items to the menu
-- View available menu items
-- Place customer orders
-- Calculate total order price automatically
-- View all orders
-- Delete orders
+## Technology
 
+PHP · MySQL · HTML · XAMPP
 
-## 🛠️ Technologies Used
+## Repository guide
 
-- PHP
-- MySQL
-- HTML
-- XAMPP (Local Server)
-  
+| File | Purpose |
+| --- | --- |
+| [`index.php`](index.php) | Main application page |
+| [`add_menu.php`](add_menu.php) | Add menu items |
+| [`order.php`](order.php) | Order form |
+| [`orders.php`](orders.php) | Manage orders |
+| [`db.php`](db.php) | Database connection |
 
-## 🗄️ Database Structure
+## Local setup
 
-### 🔹 Table: menu
+Run Apache and MySQL through XAMPP, configure your MySQL database in `db.php`, and open the application from your local server. The required schema must be created separately; this repository does not include an SQL import file.
 
-- id (Primary Key)
-- name
-- price
-- category
-- description
-- image
-
-### 🔹 Table: orders
-
-- id (Primary Key)
-- food_id (Foreign Key)
-- customer_name
-- quantity
-- total_price
-- order_date
-
-## 📁 Project Structure
-
-menu_order_system/\
-│\
-├── db.php\
-├── index.php\
-├── add_menu.php\
-├── insert_menu.php\
-├── order.php\
-├── place_order.php\
-├── orders.php\
-├── delete_order.php\
-├── css/\
-└── images/
-
-
-## ▶️ How to Run the Project
-
-1. Install XAMPP
-2. Place the project folder inside the htdocs directory
-3. Start Apache and MySQL
-4. Open phpMyAdmin
-5. Create a database named `menu_order_db`
-6. Create required tables using SQL
-7. Open the browser and go to:
-
-
-## 🎯 Purpose
-
-This project was developed as an academic database/web development project to demonstrate CRUD operations and efficient data management using PHP and MySQL.
-
-## 👨‍💻 Author
-
-Farjana Zaman Orpy
-
+*An academic web and database management project.*
